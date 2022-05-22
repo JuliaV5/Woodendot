@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap');
 
 .container {
     width: 100%;
-    max-width: 1320px;
+    max-width: 1440px;
     margin: 0 auto;
     overflow: auto;
     padding: 0px 15px;
@@ -123,7 +123,6 @@ div.achievement_block p{
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
-    
 }
 
 div.achievement_block img{
@@ -131,18 +130,32 @@ div.achievement_block img{
 }
 
 div.image_block {
-    height: 293px;
+    height: 320px;
     display: flex;
 }
 
-div.collections{
+div.collections  {
     background-color: #F7F7F7;
+    height: 570px;
+    display: flex;
+    
+    text-align: right;
+}
+
+#left {
+    padding: 115px 0px 30px 0px;
+}
+#right {
+    text-align: left;
+}
+
+div.information_part{
+    padding: 0px 20px;
 }
 
 div.collections h2{
     font-family: Roboto;
     font-weight: 700;
-
 }
 
 span.designation {
@@ -152,4 +165,42 @@ span.designation {
     font-weight: 400;
     line-height: 37px;
     text-align: right;
+} 
+span.price{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: right;
+}
+
+div.collections p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #525252;
+}
+
+div.collections a {
+    font-family: Roboto;
+    font-size: 17px;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 5px #000000 inset;
+}
+/*
+div.collections a:hover {
+    border: #050505;
+}
+*/
+
+div.collections img {
+    height: 540px;
+}
+
+div.collections {
+    background-color: #F7F7F7;
+}
+
+div.collections img {
+    height: 540px;
 }
