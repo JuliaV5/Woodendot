@@ -2,7 +2,7 @@
 
 .container {
     width: 100%;
-    max-width: 1440px;
+    height: auto;
     margin: 0 auto;
     overflow: auto;
     padding: 0px 15px;
@@ -138,8 +138,6 @@ div.collections  {
     display: flex;
     text-align: right;
 }
-
-
 
 .left a{
     position: absolute;
@@ -423,13 +421,14 @@ div.footerblock {
     text-align: center;
     position: relative;
     margin: 0 auto;
+    width: 100%;
 }
 
 div.footerblock ul{
     font-size: 21px;
     padding: 50px 0px;
     width: 255px;
-    height: 350px;
+    height: auto;
     line-height: 30px;
     margin: 0 auto;
 }
@@ -460,18 +459,176 @@ div.footer-info img{
 }
 
 div.footerblock span.footer-span-left {
-    position: absolute;
-    left: 100px;
-    bottom: 60px;
+    margin: 0px 150px;
 }
+
 div.footer-logo{
-    position: absolute;
-    left: 520px;
-    bottom: 55px;
+    margin: 0px 100px;
 }
 
 div.footerblock span.footer-span-right {
-    position: absolute;
-    right: 100px;
-    bottom: 60px;
+    margin: 0px 100px;
+}
+
+div.footer-down {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 1200px) {
+    .left a {
+            position: absolute;
+            left: 350px;
+        }
+    #right a {
+            position: absolute;
+            right: 350px;
+            bottom: 255px;
+        }
+    div.collections img {
+            height: 340px;
+        }
+    .left a {
+            position: absolute;
+            bottom: 255px;
+            left: 350px;
+        }
+    div.benefit_items {
+        float: left;
+        height: 260px;
+        width: 270px;
+    }
+}
+
+@media (max-width: 998px) {
+    nav ul li {
+        padding: 10px;
+        font-size: smaller;
+        }
+    .left a {
+        position: absolute;
+        bottom: 255px;
+        left: 250px;
+        }
+        
+    div.collections img {
+            height: 250px;
+        }
+
+}
+
+@media (max-width: 800px) {
+    nav ul li {
+            padding: 10px;
+            font-size: 12px;
+        }
+    div.logo-wrap img{
+        width: 100px;
+    }    
+    .logo-wrap {
+        position: absolute;
+        left: 50%;
+    }
+    h1.front-text{
+        font-size: 18px;
+        top: 20%;
+    }
+    .front-page button.center{
+        font-size: 15px;
+        top: 35%;
+    }
+    .front-page {
+        max-height: 300px;
+    }
+    
+    .front-page-left-btn {
+        padding: 10px 25px;
+        font-size: 10px;
+        line-height: 10px;
+        position: absolute;
+        left: 20px;
+        bottom: 250px;}
+    div.collections img {
+        height: 240px;
+    }
+    .left a {
+        position: absolute;
+        left: 250px;
+        bottom: 200px;
+        }
+    
+    #right a {
+        position: absolute;
+        right: 250px;
+        bottom: 200px;
+        }
+    div.benefit_items {
+        height: 160px;
+        width: 170px;
+        }
+    div.benefit_items img {
+        margin: 0 auto;
+        }
+    div.benefit_items h3{
+        font-size: 16px;
+    }
+    div.benefit_items p{
+        width: auto;
+        padding: 0px 0px 20px 20px;
+    }
+    
+}
+
+@media (max-width: 575px) {
+    nav ul li {
+        padding: 8px;
+        font-size: 10px;
+        }
+    h1.front-text {
+        font-size: 14px;
+        top: 10%;
+        }
+    
+    .front-page button.center {
+        font-size: 12px;
+        top: 15%;
+        }
+    
+    .front-page {
+            max-height: 250px;
+        }
+    
+    .front-page-left-btn {
+        padding: 8px 15px;
+        font-size: 8px;
+        line-height: 8px;
+        position: absolute;
+        left: 20px;
+        }
+    div.image_block{
+        height: 100px;
+    }    
+    
+    div.collections img {
+            height: 140px;
+    }
+    
+    div.benefit_items {
+        height: 100px;
+        width: 100px;
+        }
+    
+    div.benefit_items img {
+        margin: 0 auto;
+        height: 50px;
+        }
+    
+    div.benefit_items h3 {
+        ont-size: 12px;
+        }
+    
+    div.benefit_items p {
+        width: auto;
+        font-size: 10px;
+        padding: 0px 0px 10px 10px;
+        }
 }
