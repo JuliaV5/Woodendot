@@ -11,6 +11,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <style>
+    .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+      display: flex;
+      border: none;
+      align-items:center;
+      margin: 0 auto;
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -157,9 +165,9 @@
                 <h2>Our pieces inside your home</h2>
                 <p>Get inspired by our products in real-life. Tag us and be featured!</p>
                 <div class="owl-carousel">
-                    <div> <img src="./img/interior-1.png" /></div>
-                    <div> <img src="./img/interior-2.png" /></div>
-                    <div> <img src="./img/interior-3.png" /></div>
+                    <div class="interior-1"></div>
+                    <div class="interior-2"></div>
+                    <div class="interior-3"></div>
                     
                 </div>
             </div>
@@ -168,7 +176,8 @@
             <div class="reviews">
                 
                 <p>"The team from Woodendot has displayed utmost professionalism from order to deliver and customer support. We placed an order to the UK and would<br> definitely recommend friends to order from Woodendot!"</p>
-                <span>R. Aoun, United Kingdom</span>
+                <span>R. Aoun, United Kingdom</span><br>
+                <img src="./img/icons/Group_dots.png" alt="" />
                
                 
             </div>
@@ -203,8 +212,20 @@
         </div>
         <div class="container">
             <div class="they-write-about-us">
-                <p >Those who are talking about us...</p>
-               <img src="./img/icons/edition.png" alt=""/>
+                <p >Those who are talking about us...</p><br>
+               <div class="magazines">
+                  <img src="./img/icons/edition-interiorDesign.png" alt=""/>
+                  <img src="./img/icons/edition-NYTimes.png" alt=""/>
+                  <img src="./img/icons/edition-ELLE.png" alt=""/>
+                  <img src="./img/icons/editionAD.png" alt=""/>
+                  <img src="./img/icons/edition-onOffice.png" alt=""/>
+                  <img src="./img/icons/edition-designBoom.png" alt=""/>
+                  <img src="./img/icons/edition-DIAA.png" alt=""/>
+                  <img src="./img/icons/edition-design-milk.png" alt=""/>
+                  <img src="./img/icons/editionWallpaper.png" alt=""/>
+                  <img src="./img/icons/edition-dezeen.png" alt=""/>
+               </div>
+               
             </div>
         </div>
    </main>
@@ -212,33 +233,44 @@
        <div class="container">
         <div class="footerblock">
             <ul class="footer"><b>ABOUT</b>
-                <li>About Us</li>
-                <li>Design</li>
-                <li>Sustainability</li>
-                <li>We plant trees</li>
-                <li>Our Story</li>
-                <li>Awards</li>
+                <li><a rel="stylesheet" href="#">About Us</a></li>
+                <li><a rel="stylesheet" href="#">Design</a></li>
+                <li><a rel="stylesheet" href="#">Sustainability</a></li>
+                <li><a rel="stylesheet" href="#">We plant trees</a></li>
+                <li><a rel="stylesheet" href="#">Our Story</a></li>
+                <li><a rel="stylesheet" href="#">Awards</a></li>
             </ul>
              <ul class="footer" ><b>HELP</b>
-                <li>Holiday Offers FAQ</li>
-                <li>FAQ</li>
-                <li>Warranty</li>
-                <li>Shipments</li>
-                <li>Returns & Claims</li>
-                <li>Contact us</li>
+                <li><a rel="stylesheet" href="#">Holiday Offers FAQ</a></li>
+                <li><a rel="stylesheet" href="#">FAQ</a></li>
+                <li><a rel="stylesheet" href="#">Warranty</a></li>
+                <li><a rel="stylesheet" href="#">Shipments</a></li>
+                <li><a rel="stylesheet" href="#">Returns & Claims</a></li>
+                <li><a rel="stylesheet" href="#">Contact u</a>s</li>
             </ul>
              <ul class="footer"><b>MORE</b>
-                <li>Where to find us</li>
-                <li>Woodendot Family</li>
-                <li>Press</li>
-                <li>Affiliates</li>
-                <li>Video Lifestyle</li>
+                <li><a rel="stylesheet" href="#">Where to find us</a></li>
+                <li><a rel="stylesheet" href="#">Woodendot Family</a></li>
+                <li><a rel="stylesheet" href="#">Press</a></li>
+                <li><a rel="stylesheet" href="#">Affiliates</a></li>
+                <li><a rel="stylesheet" href="#">Video Lifestyle</a></li>
             </ul>
             <div class="footer-info">
                 <p>Don’t miss any news and exclusive offers!</p>
-                <button class="footer-btt"><a href="#">Newsletter subscription</a></button>
-                
+                <button class="footer-btt"><a href="#">Newsletter subscription</a></button><br>
+                <img src="./img/icons/emblem1.png" alt="" />
+                <img src="./img/icons/emblem2.png" alt="" /><br>
+                <img src="./img/icons/emblem3.png" alt="" />
             </div>
+            <span class="footer-span-left">© Copyright – WOODENDOT 2021</span>
+            <div class="footer-logo"> 
+                <img src="./img/icons/visa-logo.png" alt="visa-logo" />
+                <img src="./img/icons/pay-pal_logo.png" alt="pay-pal logo" />
+                <img src="./img/icons/mastercard-logo.png" alt="mastercard-logo" />
+                <img src="./img/icons/american-express_logo.png" alt="american-express_logo" />
+                <img src="./img/icons/klarna-logo.png" alt="klarna-logo" />
+            </div>
+            <span class="footer-span-right">Terms & Conditions | Privacy Policy & Cookies</span>
         </div>
         
 
@@ -253,7 +285,7 @@
         $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
             center: true,
-            items:3,
+            items:15,
             loop:true,
             margin:10,
             dots:true,
